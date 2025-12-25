@@ -1,115 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dennis | Software Engineer</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      margin: 0;
-      padding: 40px;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.3rem;
-    }
-    h2 {
-      margin-top: 2.5rem;
-      border-bottom: 1px solid #334155;
-      padding-bottom: 0.3rem;
-    }
-    p {
-      color: #cbd5f5;
-    }
-    .project {
-      margin-bottom: 1.5rem;
-      padding: 1rem;
-      background: #020617;
-      border-radius: 10px;
-    }
-    .project-title {
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
-    .tech {
-      font-size: 0.9rem;
-      color: #94a3b8;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-      margin-right: 15px;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #94a3b8;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Dennis</h1>
-    <p><strong>Software Engineer</strong></p>
-    <p>
-      Full-stack developer with hands-on experience in MERN stack, real-time systems,
-      and AI/LLM-based agent architectures.
+<h2>Projects</h2>
+
+<div class="project">
+  <div class="project-title">MERN Messenger Starter</div>
+  <p>
+    A real-time chat application built as a hands-on exploration of the MERN stack,
+    focusing on authentication flows, token handling, and WebSocket-based messaging.
     </p>
+  <p>
+    The project explores how modern web applications handle live messaging, user presence, and session-based authentication, with a UI inspired by WhatsApp’s dark theme.
+  </p>
+  <p class="tech">Tech: MongoDB, Express, React, Node.js, Socket.IO</p>
+  <a href="https://github.com/denisgerad/mern-messenger-starter" target="_blank">GitHub Repo</a>
+<br>
+<br>
+</div>
 
-    <h2>Projects</h2>
+<div class="project">
+  <div class="project-title">Crew-AI (HR Recruiting Prototype)</div>
+  <p>
+    An AI-powered HR recruiting prototype designed to evaluate how multiple LLM agents
+    can collaborate on complex tasks such as CV parsing, candidate scoring,
+    and decision-making.
+  </p>
+  <p>
+    The project explores agent orchestration, role-based reasoning, and task delegation
+    using CrewAI, while running models locally via Ollama. The focus is on understanding
+    agent workflows and decision boundaries rather than building a production ATS.
+  </p>
+  <p class="tech">Tech: Python, CrewAI, Ollama, Multi-Agent LLMs</p>
+  <a href="https://github.com/denisgerad/crew-ai" target="_blank">GitHub Repo</a>
+<br>
+<br>
+</div>
 
-    <div class="project">
-      <div class="project-title">MERN Messenger Starter</div>
-      <p>
-        Real-time chat application built to showcase MERN stack fundamentals,
-        authentication, and WebSocket-based messaging.
-      </p>
-      <p class="tech">Tech: MongoDB, Express, React, Node.js, Socket.IO</p>
-      <a href="https://github.com/denisgerad/mern-messenger-starter" target="_blank">GitHub Repo</a>
-    </div>
-
-    <div class="project">
-      <div class="project-title">Crew-AI (HR Recruiting Prototype)</div>
-      <p>
-        AI-powered CV analysis and recruiting prototype using CrewAI with multiple
-        LLMs for task orchestration and decision-making.
-      </p>
-      <p class="tech">Tech: Python, CrewAI, Ollama, Multi-Model LLMs</p>
-      <a href="https://github.com/denisgerad/crew-ai" target="_blank">GitHub Repo</a>
-    </div>
-
-    <div class="project">
-      <div class="project-title">AI Agent Prototype</div>
-      <p>
-        Tool-based LLM agent system capable of reasoning, tool invocation,
-        and multi-step task execution.
-      </p>
-      <p class="tech">Tech: Python, LLM Agents, Tool Calling, Prompt Engineering</p>
-      <a href="https://github.com/denisgerad/ai-agent-prototype" target="_blank">GitHub Repo</a>
-    </div>
-
-    <h2>GitHub</h2>
-    <p>
-      View all repositories here →
-      <a href="https://github.com/denisgerad?tab=repositories" target="_blank">
-        github.com/denisgerad
-      </a>
-    </p>
-
-    <footer>
-      © Dennis | Software Engineer
-    </footer>
-  </div>
-</body>
-</html>
+<div class="project">
+  <div class="project-title">AI Agent Prototype</div>
+  <p>
+    A research-oriented AI agent framework built to study agentic reasoning,
+    conversation memory, and dynamic tool selection using locally hosted LLMs.
+    The agent can reason over PDFs (RAG), web content, APIs, and conversation history.
+  </p>
+  <p>
+    A key extension of this project is an investigation-first Debug Agent that avoids
+    blind code refactoring. Instead, it detects environmental signals (e.g. “works on PC
+    but not mobile”), asks clarifying questions, generates verification steps,
+    and proposes multiple fix strategies only after validation.
+  </p>
+  <p class="tech">
+    Tech: Python, LangChain, Ollama (Mistral), ChromaDB, Tool Calling, Agent Memory
+  </p>
+  <a href="https://github.com/denisgerad/ai-agent-prototype" target="_blank">GitHub Repo</a>
+</div>
